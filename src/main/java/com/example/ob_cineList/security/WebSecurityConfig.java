@@ -10,7 +10,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 import static org.springframework.security.config.Customizer.withDefaults;
-
+//https://obcinelist-production.up.railway.app/images/allied.jpg
 @Configuration
 public class WebSecurityConfig {
 
@@ -27,7 +27,8 @@ public class WebSecurityConfig {
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
-        return (web) -> web.ignoring().requestMatchers("/api/movies","/images/allied.jpg");
+        return (web) -> web.ignoring().requestMatchers("/api/movies","/images/allied.jpg","/images/avengers_infinity_war.jpg",
+                "/images/contracara.jpg","/images/el_francotirador.jpg","/images/enemy.jpg","/images/the_fighter.jpg","/images/the_wolf_of_wall_street.jpg","/images/underworld.jpg");
     }
 
     @Bean
