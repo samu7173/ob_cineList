@@ -27,7 +27,7 @@ public class WebSecurityConfig {
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
-        return (web) -> web.ignoring().requestMatchers("/api/movies","/images");
+        return (web) -> web.ignoring().requestMatchers("/api/movies","/images/allied.jpg");
     }
 
     @Bean
